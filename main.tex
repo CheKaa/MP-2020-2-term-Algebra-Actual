@@ -2,29 +2,32 @@
 \usepackage[a4paper,includeheadfoot,top=5mm,bottom=10mm,left=10mm,right=10mm]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[russian]{babel}
+\usepackage{cmap} % Поддержка поиска русских слов в PDF (pdflatex)
+\usepackage{comment}
+%\usepackage{pdfsync} % синхронизация
+
 \usepackage{amsmath,amsthm,amssymb,amscd,array}
 \usepackage{latexsym}
 \usepackage{stmaryrd} % Для знака нормальной подгруппы
-\usepackage{multicol} % нумерация в нескольких колонках
-\usepackage{graphicx}  % Вставка изображений
-\graphicspath{ {./} } % относительно main.tex
-%\usepackage{pdfsync} % синхронизация
+\usepackage{misccorr} % российская полиграфия
+\usepackage{indentfirst}% Красная строка в первом абзаце
+\usepackage{ccaption} % Заголовки таблиц и рисунков
+\usepackage{fancyhdr} % колонтитулы
+\usepackage{hyperref} % гиперссылки
+
+\usepackage{rotating} % Поворот текста
+\usepackage{graphicx} % Вставка изображений
+\usepackage{xcolor}
 \usepackage{pgf}
 \usepackage{tikz}
 \usepackage{tikz-cd}
 \usetikzlibrary{arrows,backgrounds,patterns,matrix,shapes,fit,calc,shadows,plotmarks}
-\usepackage{hyperref} % гиперссылки
-\usepackage{cmap}   % Поддержка поиска русских слов в PDF (pdflatex)
-\usepackage{indentfirst}% Красная строка в первом абзаце
-\usepackage{misccorr}
+\graphicspath{ {./} } % относительно main.tex
+
 \usepackage{arydshln} % штрихованные линии в массивах
 \usepackage{mathtools} % выравнивание в матрицах
-\usepackage{ccaption}
-\usepackage{fancyhdr}
-\usepackage{comment}
-\usepackage{rotating} % Поворот текста
-\usepackage{xcolor}
-
+\usepackage{multirow} % слияние в столбце
+\usepackage{multicol} % нумерация в нескольких колонках
 
 
 \newtheorem{uprz}{\color{violet!100!black} Упражнение}
